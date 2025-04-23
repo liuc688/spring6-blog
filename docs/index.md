@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: '尚硅谷 Spring6'
-  text: '基于 VitePress 搭建的学习记录平台'
+  # text: '基于 VitePress 搭建的学习记录平台'
   tagline: '深入掌握 Spring6 核心原理与实战技巧，构建现代企业级应用基础'
   actions:
     - theme: brand
