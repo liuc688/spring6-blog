@@ -1,8 +1,8 @@
 <img src='../images/spring6/image-20221209110043449.png' alt='' data-fancybox='gallery' style='width:297px;aspect-ratio:297/97;'/>
 
-## 1、概述
+## 1. 概述
 
-### 1.1、Spring 是什么？
+### 1.1. Spring 是什么？
 
 Spring 是一款主流的 Java EE 轻量级开源框架 ，Spring 由“Spring 之父”Rod Johnson 提出并创立，其目的是用于简化 Java 企业级应用的开发难度和开发周期。Spring 的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何 Java 应用都可以从 Spring 中受益。Spring 框架除了自己提供功能外，还提供整合其他技术和框架的能力。
 
@@ -12,7 +12,7 @@ Spring 自诞生以来备受青睐，一直被广大开发人员作为 Java 企�
 
 <img src='../images/spring6/image-20221201102513199.png' alt='' data-fancybox='gallery' style='aspect-ratio:1689/732'/>
 
-### 1.2、Spring 的狭义和广义
+### 1.2. Spring 的狭义和广义
 
 在不同的语境中，Spring 所代表的含义是不同的。下面我们就分别从“广义”和“狭义”两个角度，对 Spring 进行介绍。
 
@@ -36,7 +36,7 @@ Spring 有两个最核心模块： IoC 和 AOP。
 
 **AOP**：Aspect Oriented Programming 的简写，译为“面向切面编程”。AOP 用来封装多个类的公共行为，将那些与业务无关，却为业务模块所共同调用的逻辑封装起来，减少系统的重复代码，降低模块间的耦合度。另外，AOP 还解决一些系统层面上的问题，比如日志、事务、权限等。
 
-### 1.3、Spring Framework 特点
+### 1.3. Spring Framework 特点
 
 - 非侵入式：使用 Spring Framework 开发应用程序时，Spring 对应用程序本身的结构影响非常小。对领域模型可以做到零污染；对功能性组件也只需要使用几个简单的注解进行标记，完全不会破坏原有结构，反而能将组件结构进一步简化。这就使得基于 Spring Framework 开发应用程序时结构清晰、简洁优雅。
 
@@ -50,7 +50,7 @@ Spring 有两个最核心模块： IoC 和 AOP。
 
 - 一站式：在 IoC 和 AOP 的基础上可以整合各种企业应用的开源框架和优秀的第三方类库。而且 Spring 旗下的项目已经覆盖了广泛领域，很多方面的功能性需求可以在 Spring Framework 的基础上全部使用 Spring 来实现。
 
-### 1.4、Spring 模块组成
+### 1.4. Spring 模块组成
 
 官网地址：https://spring.io/
 
@@ -99,15 +99,15 @@ spring core 提供了 IOC,DI,Bean 配置装载创建的核心实现。核心概�
 
 - spring-test：集成测试支持，主要是对 junit 的封装
 
-### 1.5、Spring6 特点
+### 1.5. Spring6 特点
 
-#### 1.5.1、版本要求
+#### 1.5.1. 版本要求
 
 **（1）Spring6 要求 JDK 最低版本是 JDK17**
 
 <img src='../images/spring6/image-20221201103138194.png' alt='' data-fancybox='gallery' style='aspect-ratio:1341/533'/>
 
-#### 1.5.2、本课程软件版本
+#### 1.5.2. 本课程软件版本
 
 （1）IDEA 开发工具：2022.1.2
 
@@ -115,9 +115,9 @@ spring core 提供了 IOC,DI,Bean 配置装载创建的核心实现。核心概�
 
 （3）Spring：6.0.2
 
-## 2、入门
+## 2. 入门
 
-### 2.1、环境要求
+### 2.1. 环境要求
 
 - JDK：Java17+**（Spring6 要求 JDK 最低版本是 Java17）**
 
@@ -125,7 +125,7 @@ spring core 提供了 IOC,DI,Bean 配置装载创建的核心实现。核心概�
 
 - Spring：6.0.2
 
-### 2.2、构建模块
+### 2.2. 构建模块
 
 **（1）构建父模块 spring6**
 
@@ -147,9 +147,9 @@ spring core 提供了 IOC,DI,Bean 配置装载创建的核心实现。核心概�
 
 <img src='../images/spring6/image-20221205202154225.png' alt='' data-fancybox='gallery' style='aspect-ratio:1261/525'/>
 
-### 2.3、程序开发
+### 2.3. 程序开发
 
-#### 2.3.1、引入依赖
+#### 2.3.1. 引入依赖
 
 https://spring.io/projects/spring-framework#learn
 
@@ -178,7 +178,7 @@ https://spring.io/projects/spring-framework#learn
 
 <img src='../images/spring6/image-20221201105416558.png' alt='' data-fancybox='gallery' style='aspect-ratio:687/234'/>
 
-#### 2.3.2、创建 java 类
+#### 2.3.2. 创建 java 类
 
 ```java
 package com.atguigu.spring6.bean;
@@ -191,7 +191,7 @@ public class HelloWorld {
 }
 ```
 
-#### 2.3.3、创建配置文件
+#### 2.3.3. 创建配置文件
 
 在 resources 目录创建一个 Spring 配置文件 beans.xml（配置文件名称可随意命名，如：springs.xm）
 
@@ -215,7 +215,7 @@ public class HelloWorld {
 </beans>
 ```
 
-#### 2.3.4、创建测试类测试
+#### 2.3.4. 创建测试类测试
 
 ```java
 package com.atguigu.spring6.bean;
@@ -235,11 +235,11 @@ public class HelloWorldTest {
 }
 ```
 
-#### 2.3.5、运行测试程序
+#### 2.3.5. 运行测试程序
 
 <img src='../images/spring6/image-20221031172354535.png' alt='' data-fancybox='gallery' style='aspect-ratio:988/247'/>
 
-### 2.4、程序分析
+### 2.4. 程序分析
 
 **1. 底层是怎么创建对象的，是通过反射机制调用无参数构造方法吗？**
 
@@ -287,9 +287,9 @@ private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHash
 Spring 容器加载到 Bean 类时 , 会把这个类的描述信息, 以包名加类名的方式存到 beanDefinitionMap 中,
 `Map<String,BeanDefinition>` , 其中 String 是 Key , 默认是类名首字母小写 , BeanDefinition , 存的是类的定义(描述信息) , 我们通常叫 BeanDefinition 接口为 : bean 的定义对象。
 
-### 2.5、启用 Log4j2 日志框架
+### 2.5. 启用 Log4j2 日志框架
 
-#### 2.5.1、Log4j2 日志概述
+#### 2.5.1. Log4j2 日志概述
 
 在项目开发中，日志十分的重要，不管是记录运行情况还是定位线上问题，都离不开对日志的分析。日志记录了系统行为的时间、地点、状态等相关信息，能够帮助我们了解并监控系统状态，在发生错误或者接近某种危险状态时能够及时提醒我们处理，同时在系统产生问题时，能够帮助我们快速的定位、诊断并解决问题。
 
@@ -311,7 +311,7 @@ FATAL：严重错误
 
 **（3）日志信息的输出格式**，而输出格式则控制了日志信息的显示内容。
 
-#### 2.5.2、引入 Log4j2 依赖
+#### 2.5.2. 引入 Log4j2 依赖
 
 ```xml
 <!--log4j2的依赖-->
@@ -327,7 +327,7 @@ FATAL：严重错误
 </dependency>
 ```
 
-#### 2.5.3、加入日志配置文件
+#### 2.5.3. 加入日志配置文件
 
 在类的根路径下提供 log4j2.xml 配置文件（文件名固定为：log4j2.xml，文件必须放到类根路径下。）
 
@@ -382,7 +382,7 @@ FATAL：严重错误
 </configuration>
 ```
 
-#### 2.5.4、测试
+#### 2.5.4. 测试
 
 运行原测试程序
 
@@ -390,7 +390,7 @@ FATAL：严重错误
 
 运行原测试程序，多了 spring 打印日志
 
-#### 2.5.5、使用日志
+#### 2.5.5. 使用日志
 
 ```java
 public class HelloWorldTest {
@@ -411,7 +411,7 @@ public class HelloWorldTest {
 
 <img src='../images/spring6/image-20221031214547501.png' alt='' data-fancybox='gallery' style='aspect-ratio:1307/333'/>
 
-## 3、容器：IoC
+## 3. 容器：IoC
 
 IoC 是 Inversion of Control 的简写，译为“控制反转”，它不是一门技术，而是一种设计思想，是一个重要的面向对象编程法则，能够指导我们如何设计出松耦合、更优良的程序。
 
@@ -419,9 +419,9 @@ Spring 通过 IoC 容器来管理所有 Java 对象的实例化和初始化，�
 
 IoC 容器是 Spring 框架中最重要的核心组件之一，它贯穿了 Spring 从诞生到成长的整个过程。
 
-### 3.1、IoC 容器
+### 3.1. IoC 容器
 
-#### 3.1.1、控制反转（IoC）
+#### 3.1.1. 控制反转（IoC）
 
 - 控制反转是一种思想。
 - 控制反转是为了降低程序耦合度，提高程序扩展力。
@@ -434,7 +434,7 @@ IoC 容器是 Spring 框架中最重要的核心组件之一，它贯穿了 Spri
 
   - DI（Dependency Injection）：依赖注入
 
-#### 3.1.2、依赖注入
+#### 3.1.2. 依赖注入
 
 DI（Dependency Injection）：依赖注入，依赖注入实现了控制反转的思想。
 
@@ -451,7 +451,7 @@ DI（Dependency Injection）：依赖注入，依赖注入实现了控制反转�
 
 **Bean 管理说的是：Bean 对象的创建，以及 Bean 对象中属性的赋值（或者叫做 Bean 对象之间关系的维护）。**
 
-#### 3.1.3、IoC 容器在 Spring 的实现
+#### 3.1.3. IoC 容器在 Spring 的实现
 
 Spring 的 IoC 容器就是 IoC 思想的一个落地的产品实现。IoC 容器中管理的组件也叫做 bean。在创建 bean 之前，首先需要创建 IoC 容器。Spring 提供了 IoC 容器的两种实现方式：
 
@@ -474,9 +474,9 @@ BeanFactory 的子接口，提供了更多高级特性。面向 Spring 的使用
 | ConfigurableApplicationContext  | ApplicationContext 的子接口，包含一些扩展方法 refresh() 和 close() ，让 ApplicationContext 具有启动、关闭和刷新上下文的能力。 |
 | WebApplicationContext           | 专门为 Web 应用准备，基于 Web 环境创建 IOC 容器对象，并将对象引入存入 ServletContext 域中。                                   |
 
-### 3.2、基于 XML 管理 Bean
+### 3.2. 基于 XML 管理 Bean
 
-#### 3.2.1、搭建子模块 spring6-ioc-xml
+#### 3.2.1. 搭建子模块 spring6-ioc-xml
 
 **① 搭建模块**
 
@@ -559,13 +559,13 @@ public class HelloWorldTest {
 }
 ```
 
-#### 3.2.2、实验一：获取 bean
+#### 3.2.2. 实验一：获取 bean
 
-##### ① 方式一：根据 id 获取
+##### 3.2.2.1. 方式一：根据 id 获取
 
 由于 id 属性指定了 bean 的唯一标识，所以根据 bean 标签的 id 属性可以精确获取到一个组件对象。上个实验中我们使用的就是这种方式。
 
-##### ② 方式二：根据类型获取
+##### 3.2.2.2. 方式二：根据类型获取
 
 ```java
 @Test
@@ -576,7 +576,7 @@ public void testHelloWorld1(){
 }
 ```
 
-##### ③ 方式三：根据 id 和类型
+##### 3.2.2.3. 方式三：根据 id 和类型
 
 ```java
 @Test
@@ -587,7 +587,7 @@ public void testHelloWorld2(){
 }
 ```
 
-##### ④ 注意的地方
+##### 3.2.2.4. 注意的地方
 
 当根据类型获取 bean 时，要求 IOC 容器中指定类型的 bean 有且只能有一个
 
@@ -602,7 +602,7 @@ public void testHelloWorld2(){
 
 > org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.atguigu.spring6.bean.HelloWorld' available: expected single matching bean but found 2: helloworldOne,helloworldTwo
 
-##### ⑤ 扩展知识
+##### 3.2.2.5. 扩展知识
 
 如果组件类实现了接口，根据接口类型可以获取 bean 吗？
 
@@ -618,7 +618,7 @@ public void testHelloWorld2(){
 
 java 中，instanceof 运算符用于判断前面的对象是否是后面的类，或其子类、实现类的实例。如果是返回 true，否则返回 false。也就是说：用 instanceof 关键字做判断时， instanceof 操作符的左右操作必须有继承或实现关系
 
-#### 3.2.3、实验二：依赖注入之 setter 注入
+#### 3.2.3. 实验二：依赖注入之 setter 注入
 
 **① 创建学生类 Student**
 
@@ -710,7 +710,7 @@ public void testDIBySet(){
 }
 ```
 
-#### 3.2.4、实验三：依赖注入之构造器注入
+#### 3.2.4. 实验三：依赖注入之构造器注入
 
 **① 在 Student 类中添加有参构造**
 
@@ -754,9 +754,9 @@ public void testDIByConstructor(){
 }
 ```
 
-#### 3.2.5、实验四：特殊值处理
+#### 3.2.5. 实验四：特殊值处理
 
-##### ① 字面量赋值
+##### 3.2.5.1. 字面量赋值
 
 > 什么是字面量？
 >
@@ -771,7 +771,7 @@ public void testDIByConstructor(){
 <property name="name" value="张三"/>
 ```
 
-##### ②null 值
+##### 3.2.5.2. null 值
 
 ```xml
 <property name="name">
@@ -787,7 +787,7 @@ public void testDIByConstructor(){
 
 以上写法，为 name 所赋的值是字符串 null
 
-##### ③xml 实体
+##### 3.2.5.3. xml 实体
 
 ```xml
 <!-- 小于号在XML文档中用来定义标签的开始，不能随便使用 -->
@@ -795,7 +795,7 @@ public void testDIByConstructor(){
 <property name="expression" value="a &lt; b"/>
 ```
 
-##### ④CDATA 节
+##### 3.2.5.4. CDATA 节
 
 ```xml
 <property name="expression">
@@ -807,7 +807,7 @@ public void testDIByConstructor(){
 </property>
 ```
 
-#### 3.2.6、实验五：为对象类型属性赋值
+#### 3.2.6. 实验五：为对象类型属性赋值
 
 **① 创建班级类 Clazz**
 
@@ -870,7 +870,7 @@ public void setClazz(Clazz clazz) {
 }
 ```
 
-##### 方式一：引用外部 bean
+##### 3.2.6.1. 方式一：引用外部 bean
 
 配置 Clazz 类型的 bean：
 
@@ -910,7 +910,7 @@ public void setClazz(Clazz clazz) {
 >
 > 意思是不能把 String 类型转换成我们要的 Clazz 类型，说明我们使用 value 属性时，Spring 只把这个属性看做一个普通的字符串，不会认为这是一个 bean 的 id，更不会根据它去找到 bean 来赋值
 
-##### 方式二：内部 bean
+##### 3.2.6.2. 方式二：内部 bean
 
 ```xml
 <bean id="studentFour" class="com.atguigu.spring6.bean.Student">
@@ -929,7 +929,7 @@ public void setClazz(Clazz clazz) {
 </bean>
 ```
 
-##### 方式三：级联属性赋值
+##### 3.2.6.3. 方式三：级联属性赋值
 
 ```xml
 <bean id="studentFour" class="com.atguigu.spring6.bean.Student">
@@ -943,7 +943,7 @@ public void setClazz(Clazz clazz) {
 </bean>
 ```
 
-#### 3.2.7、实验六：为数组类型属性赋值
+#### 3.2.7. 实验六：为数组类型属性赋值
 
 **① 修改 Student 类**
 
@@ -981,9 +981,9 @@ public void setHobbies(String[] hobbies) {
 </bean>
 ```
 
-#### 3.2.8、实验七：为集合类型属性赋值
+#### 3.2.8. 实验七：为集合类型属性赋值
 
-##### ① 为 List 集合类型属性赋值
+##### 3.2.8.1. 为 List 集合类型属性赋值
 
 在 Clazz 类中添加以下代码：
 
@@ -1017,7 +1017,7 @@ public void setStudents(List<Student> students) {
 
 > 若为 Set 集合类型属性赋值，只需要将其中的 list 标签改为 set 标签即可
 
-##### ② 为 Map 集合类型属性赋值
+##### 3.2.8.2. 为 Map 集合类型属性赋值
 
 创建教师类 Teacher：
 
@@ -1124,7 +1124,7 @@ public void setTeacherMap(Map<String, Teacher> teacherMap) {
 </bean>
 ```
 
-##### ③ 引用集合类型的 bean
+##### 3.2.8.3. 引用集合类型的 bean
 
 ```xml
 <!--list集合类型的bean-->
@@ -1184,7 +1184,7 @@ public void setTeacherMap(Map<String, Teacher> teacherMap) {
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 ```
 
-#### 3.2.9、实验八：p 命名空间
+#### 3.2.9. 实验八：p 命名空间
 
 引入 p 命名空间
 
@@ -1207,7 +1207,7 @@ public void setTeacherMap(Map<String, Teacher> teacherMap) {
     p:id="1006" p:name="小明" p:clazz-ref="clazzOne" p:teacherMap-ref="teacherMap"></bean>
 ```
 
-#### 3.2.10、实验九：引入外部属性文件
+#### 3.2.10. 实验九：引入外部属性文件
 
 **① 加入依赖**
 
@@ -1285,7 +1285,7 @@ public void testDataSource() throws SQLException {
 }
 ```
 
-#### 3.2.11、实验十：bean 的作用域
+#### 3.2.11. 实验十：bean 的作用域
 
 **① 概念**
 
@@ -1391,7 +1391,7 @@ public void testBeanScope(){
 }
 ```
 
-#### 3.2.12、实验十一：bean 生命周期
+#### 3.2.12. 实验十一：bean 生命周期
 
 **① 具体的生命周期过程**
 
@@ -1550,7 +1550,7 @@ public class MyBeanProcessor implements BeanPostProcessor {
 <bean id="myBeanProcessor" class="com.atguigu.spring6.process.MyBeanProcessor"/>
 ```
 
-#### 3.2.13、实验十二：FactoryBean
+#### 3.2.13. 实验十二：FactoryBean
 
 **① 简介**
 
@@ -1742,7 +1742,7 @@ public void testUserFactoryBean(){
 }
 ```
 
-#### 3.2.14、实验十三：基于 xml 自动装配
+#### 3.2.14. 实验十三：基于 xml 自动装配
 
 > 自动装配：
 >
@@ -1870,7 +1870,7 @@ public void testAutoWireByXML(){
 }
 ```
 
-### 3.3、基于注解管理 Bean（☆）
+### 3.3. 基于注解管理 Bean（☆）
 
 从 Java 5 开始，Java 增加了对注解（Annotation）的支持，它是代码中的一种特殊标记，可以在编译、类加载和运行时被读取，执行相应的处理。开发人员可以通过注解在不改变原有代码和逻辑的情况下，在源代码中嵌入补充信息。
 
@@ -1883,7 +1883,7 @@ Spring 通过注解实现自动装配的步骤如下：
 3. 使用注解定义 Bean
 4. 依赖注入
 
-#### 3.3.1、搭建子模块 spring6-ioc-annotation
+#### 3.3.1. 搭建子模块 spring6-ioc-annotation
 
 **① 搭建模块**
 
@@ -1925,7 +1925,7 @@ Spring 通过注解实现自动装配的步骤如下：
 </dependencies>
 ```
 
-#### 3.3.2、开启组件扫描
+#### 3.3.2. 开启组件扫描
 
 Spring 默认不使用注解装配 Bean，因此我们需要在 Spring 的 XML 配置中，通过 `<context:component-scan>` 元素开启 Spring Beans 的自动扫描功能。开启此功能后，Spring 会自动从扫描指定的包（base-package 属性设置）及其子包下的所有类，如果类上使用了 @Component 注解，就将该类装配到容器中。
 
@@ -1984,7 +1984,7 @@ Spring 默认不使用注解装配 Bean，因此我们需要在 Spring 的 XML �
 </context:component-scan>
 ```
 
-#### 3.3.3、使用注解定义 Bean
+#### 3.3.3. 使用注解定义 Bean
 
 Spring 提供了以下多个注解，这些注解可以直接标注在 Java 类上，将它们定义成 Spring Bean。
 
@@ -1995,7 +1995,7 @@ Spring 提供了以下多个注解，这些注解可以直接标注在 Java 类�
 | @Service    | 该注解通常作用在业务层（Service 层），用于将业务层的类标识为 Spring 中的 Bean，其功能与 @Component 相同。                                                                               |
 | @Controller | 该注解通常作用在控制层（如 SpringMVC 的 Controller），用于将控制层的类标识为 Spring 中的 Bean，其功能与 @Component 相同。                                                               |
 
-#### 3.3.4、实验一：@Autowired 注入
+#### 3.3.4. 实验一：@Autowired 注入
 
 单独使用@Autowired 注解，**默认根据类型装配**。【默认是 byType】
 
@@ -2030,7 +2030,7 @@ public @interface Autowired {
 
 - 第二处：该注解有一个 required 属性，默认值是 true，表示在注入的时候要求被注入的 Bean 必须是存在的，如果不存在则报错。如果 required 属性设置为 false，表示注入的 Bean 存在或者不存在都没关系，存在的话就注入，不存在的话，也不报错。
 
-##### ① 场景一：属性注入
+##### 3.3.4.1. 场景一：属性注入
 
 创建 UserDao 接口
 
@@ -2153,7 +2153,7 @@ public class UserTest {
 
 以上构造方法和 setter 方法都没有提供，经过测试，仍然可以注入成功。
 
-##### ② 场景二：set 注入
+##### 3.3.4.2. 场景二：set 注入
 
 修改 UserServiceImpl 类
 
@@ -2212,7 +2212,7 @@ public class UserController {
 
 测试：成功调用
 
-##### ③ 场景三：构造方法注入
+##### 3.3.4.3. 场景三：构造方法注入
 
 修改 UserServiceImpl 类
 
@@ -2271,7 +2271,7 @@ public class UserController {
 
 测试：成功调用
 
-##### ④ 场景四：形参上注入
+##### 3.3.4.4. 场景四：形参上注入
 
 修改 UserServiceImpl 类
 
@@ -2328,7 +2328,7 @@ public class UserController {
 
 测试：成功调用
 
-##### ⑤ 场景五：只有一个构造函数，无注解
+##### 3.3.4.5. 场景五：只有一个构造函数，无注解
 
 修改 UserServiceImpl 类
 
@@ -2365,7 +2365,7 @@ public class UserServiceImpl implements UserService {
 
 说明：有多个构造方法时呢？大家可以测试（再添加一个无参构造函数），测试报错
 
-##### ⑥ 场景六：@Autowired 注解和@Qualifier 注解联合
+##### 3.3.4.6. 场景六：@Autowired 注解和@Qualifier 注解联合
 
 添加 dao 层实现
 
@@ -2422,7 +2422,7 @@ public class UserServiceImpl implements UserService {
 - 当带参数的构造方法只有一个，@Autowired 注解可以省略。（）
 - @Autowired 注解默认根据类型注入。如果要根据名称注入的话，需要配合@Qualifier 注解一起使用。
 
-#### 3.3.5、实验二：@Resource 注入
+#### 3.3.5. 实验二：@Resource 注入
 
 @Resource 注解也可以完成属性注入。那它和@Autowired 注解有什么区别？
 
@@ -2482,7 +2482,7 @@ public @interface Resource {
 }
 ```
 
-##### ① 场景一：根据 name 注入
+##### 3.3.5.1. 场景一：根据 name 注入
 
 修改 UserDaoImpl 类
 
@@ -2530,7 +2530,7 @@ public class UserServiceImpl implements UserService {
 
 测试通过
 
-##### ② 场景二：name 未知注入
+##### 3.3.5.2. 场景二：name 未知注入
 
 修改 UserDaoImpl 类
 
@@ -2580,7 +2580,7 @@ public class UserServiceImpl implements UserService {
 
 当@Resource 注解使用时没有指定 name 的时候，还是根据 name 进行查找，这个 name 是属性名。
 
-##### ③ 场景三 其他情况
+##### 3.3.5.3. 场景三 其他情况
 
 修改 UserServiceImpl 类，userDao1 属性名不存在
 
@@ -2618,7 +2618,7 @@ public class UserServiceImpl implements UserService {
 
 @Resource 注解：默认 byName 注入，没有指定 name 时把属性名当做 name，根据 name 找不到时，才会 byType 注入。byType 注入时，某种类型的 Bean 只能有一个
 
-#### 3.3.6、Spring 全注解开发
+#### 3.3.6. Spring 全注解开发
 
 全注解开发就是不再使用 spring 配置文件了，写一个配置类来代替配置文件。
 
@@ -2647,11 +2647,11 @@ public void testAllAnnotation(){
 }
 ```
 
-## 4、原理-手写 IoC
+## 4. 原理-手写 IoC
 
 我们都知道，Spring 框架的 IOC 是基于 Java 反射机制实现的，下面我们先回顾一下 java 反射。
 
-### 4.1、回顾 Java 反射
+### 4.1. 回顾 Java 反射
 
 `Java`反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为`Java`语言的反射机制。简单来说，反射机制指的是程序在运行时能够获取自身的信息。
 
@@ -2820,7 +2820,7 @@ public class TestCar {
 }
 ```
 
-### 4.2、实现 Spring 的 IoC
+### 4.2. 实现 Spring 的 IoC
 
 我们知道，IoC（控制反转）和 DI（依赖注入）是 Spring 里面核心的东西，那么，我们如何自己手写出这样的代码呢？下面我们就一步一步写出 Spring 框架最核心的部分。
 
@@ -3257,13 +3257,13 @@ public class AnnotationApplicationContext implements ApplicationContext {
 
 执行第八步：执行成功，依赖注入成功
 
-## 5、面向切面：AOP
+## 5. 面向切面：AOP
 
-### 5.1、场景模拟
+### 5.1. 场景模拟
 
 **搭建子模块：spring6-aop**
 
-#### 5.1.1、声明接口
+#### 5.1.1. 声明接口
 
 声明计算器接口 Calculator，包含加减乘除的抽象方法
 
@@ -3281,7 +3281,7 @@ public interface Calculator {
 }
 ```
 
-#### 5.1.2、创建实现类
+#### 5.1.2. 创建实现类
 
 <img src='../images/spring6/img014.png' alt='' data-fancybox='gallery' style='aspect-ratio:1160/487'/>
 
@@ -3330,7 +3330,7 @@ public class CalculatorImpl implements Calculator {
 }
 ```
 
-#### 5.1.3、创建带日志功能的实现类
+#### 5.1.3. 创建带日志功能的实现类
 
 <img src='../images/spring6/img015.png' alt='' data-fancybox='gallery' style='aspect-ratio:1160/487'/>
 
@@ -3395,7 +3395,7 @@ public class CalculatorLogImpl implements Calculator {
 }
 ```
 
-#### 5.1.4、提出问题
+#### 5.1.4. 提出问题
 
 **① 现有代码缺陷**
 
@@ -3412,9 +3412,9 @@ public class CalculatorLogImpl implements Calculator {
 
 解决问题的困难：要抽取的代码在方法内部，靠以前把子类中的重复代码抽取到父类的方式没法解决。所以需要引入新的技术。
 
-### 5.2、代理模式
+### 5.2. 代理模式
 
-#### 5.2.1、概念
+#### 5.2.1. 概念
 
 **① 介绍**
 
@@ -3437,7 +3437,7 @@ public class CalculatorLogImpl implements Calculator {
 - 代理：将非核心逻辑剥离出来以后，封装这些非核心逻辑的类、对象、方法。
 - 目标：被代理“套用”了非核心逻辑代码的类、对象、方法。
 
-#### 5.2.2、静态代理
+#### 5.2.2. 静态代理
 
 创建静态代理类：
 
@@ -3471,7 +3471,7 @@ public class CalculatorStaticProxy implements Calculator {
 >
 > 提出进一步的需求：将日志功能集中到一个代理类中，将来有任何日志需求，都通过这一个代理类来实现。这就需要使用动态代理技术了。
 
-#### 5.2.3、动态代理
+#### 5.2.3. 动态代理
 
 <img src='../images/spring6/img018.png' alt='' data-fancybox='gallery' style='aspect-ratio:1777/692'/>
 
@@ -3525,7 +3525,7 @@ public class ProxyFactory {
 }
 ```
 
-#### 5.2.4、测试
+#### 5.2.4. 测试
 
 ```java
 @Test
@@ -3537,15 +3537,15 @@ public void testDynamicProxy(){
 }
 ```
 
-### 5.3、AOP 概念及相关术语
+### 5.3. AOP 概念及相关术语
 
-#### 5.3.1、概述
+#### 5.3.1. 概述
 
 AOP（Aspect Oriented Programming）是一种设计思想，是软件设计领域中的面向切面编程，它是面向对象编程的一种补充和完善，它以通过预编译方式和运行期动态代理方式实现，在不修改源代码的情况下，给程序动态统一添加额外功能的一种技术。利用 AOP 可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
 
-#### 5.3.2、相关术语
+#### 5.3.2. 相关术语
 
-##### ① 横切关注点
+##### 5.3.2.1. 横切关注点
 
 分散在每个各个模块中解决同一样的问题，如用户验证、日志管理、事务处理、数据缓存都属于横切关注点。
 
@@ -3555,7 +3555,7 @@ AOP（Aspect Oriented Programming）是一种设计思想，是软件设计领�
 
 <img src='../images/spring6/img019.png' alt='' data-fancybox='gallery' style='aspect-ratio:1219/631'/>
 
-##### ② 通知（增强）
+##### 5.3.2.2. 通知（增强）
 
 **增强，通俗说，就是你想要增强的功能，比如 安全，事务，日志等。**
 
@@ -3569,21 +3569,21 @@ AOP（Aspect Oriented Programming）是一种设计思想，是软件设计领�
 
 <img src='../images/spring6/img020.png' alt='' data-fancybox='gallery' style='aspect-ratio:771/530'/>
 
-##### ③ 切面
+##### 5.3.2.3. 切面
 
 封装通知方法的类。
 
 <img src='../images/spring6/img021.png' alt='' data-fancybox='gallery' style='aspect-ratio:771/531'/>
 
-##### ④ 目标
+##### 5.3.2.4. 目标
 
 被代理的目标对象。
 
-##### ⑤ 代理
+##### 5.3.2.5. 代理
 
 向目标对象应用通知之后创建的代理对象。
 
-##### ⑥ 连接点
+##### 5.3.2.6. 连接点
 
 这也是一个纯逻辑概念，不是语法定义的。
 
@@ -3591,7 +3591,7 @@ AOP（Aspect Oriented Programming）是一种设计思想，是软件设计领�
 
 <img src='../images/spring6/img022.png' alt='' data-fancybox='gallery' style='aspect-ratio:1350/865'/>
 
-##### ⑦ 切入点
+##### 5.3.2.7. 切入点
 
 定位连接点的方式。
 
@@ -3603,15 +3603,15 @@ AOP（Aspect Oriented Programming）是一种设计思想，是软件设计领�
 
 切点通过 org.springframework.aop.Pointcut 接口进行描述，它使用类和方法作为连接点的查询条件。
 
-#### 5.3.3、作用
+#### 5.3.3. 作用
 
 - 简化代码：把方法中固定位置的重复的代码**抽取**出来，让被抽取的方法更专注于自己的核心功能，提高内聚性。
 
 - 代码增强：把特定的功能封装到切面类中，看哪里有需要，就往上套，被**套用**了切面逻辑的方法就被切面给增强了。
 
-### 5.4、基于注解的 AOP
+### 5.4. 基于注解的 AOP
 
-#### 5.4.1、技术说明
+#### 5.4.1. 技术说明
 
 <img src='../images/spring6/img023.png' alt='' data-fancybox='gallery' style='aspect-ratio:700/556'/>
 
@@ -3625,7 +3625,7 @@ AOP（Aspect Oriented Programming）是一种设计思想，是软件设计领�
 - cglib：通过**继承被代理的目标类**（认干爹模式）实现代理，所以不需要目标类实现接口。
 - AspectJ：是 AOP 思想的一种实现。本质上是静态代理，**将代理逻辑“织入”被代理的目标类编译得到的字节码文件**，所以最终效果是动态的。weaver 就是织入器。Spring 只是借用了 AspectJ 中的注解。
 
-#### 5.4.2、准备工作
+#### 5.4.2. 准备工作
 
 **① 添加依赖**
 
@@ -3741,7 +3741,7 @@ public class CalculatorImpl implements Calculator {
 }
 ```
 
-#### 5.4.3、创建切面类并配置
+#### 5.4.3. 创建切面类并配置
 
 ```java
 // @Aspect表示这个类是一个切面类
@@ -3845,7 +3845,7 @@ public class CalculatorTest {
 
 <img src='../images/spring6/image-20221102155523983.png' alt='' data-fancybox='gallery' style='aspect-ratio:1166/340'/>
 
-#### 5.4.4、各种通知
+#### 5.4.4. 各种通知
 
 - 前置通知：使用@Before 注解标识，在被代理的目标方法**前**执行
 - 返回通知：使用@AfterReturning 注解标识，在被代理的目标方法**成功结束**后执行（**寿终正寝**）
@@ -3866,7 +3866,7 @@ public class CalculatorTest {
 >   - 返回通知或异常通知
 >   - 后置通知
 
-#### 5.4.5、切入点表达式语法
+#### 5.4.5. 切入点表达式语法
 
 **① 作用**
 
@@ -3898,7 +3898,7 @@ public class CalculatorTest {
 
 <img src='../images/spring6/img025.png' alt='' data-fancybox='gallery' style='aspect-ratio:1781/531'/>
 
-#### 5.4.6、重用切入点表达式
+#### 5.4.6. 重用切入点表达式
 
 **① 声明**
 
@@ -3929,7 +3929,7 @@ public void beforeMethod(JoinPoint joinPoint){
 }
 ```
 
-#### 5.4.7、获取通知的相关信息
+#### 5.4.7. 获取通知的相关信息
 
 **① 获取连接点信息**
 
@@ -3970,7 +3970,7 @@ public void afterThrowingMethod(JoinPoint joinPoint, Throwable ex){
 }
 ```
 
-#### 5.4.8、环绕通知
+#### 5.4.8. 环绕通知
 
 ```java
 @Around("execution(* com.atguigu.aop.annotation.CalculatorImpl.*(..))")
@@ -3993,7 +3993,7 @@ public Object aroundMethod(ProceedingJoinPoint joinPoint){
 }
 ```
 
-#### 5.4.9、切面的优先级
+#### 5.4.9. 切面的优先级
 
 相同目标方法上同时存在多个切面时，切面的优先级控制切面的**内外嵌套**顺序。
 
@@ -4007,13 +4007,13 @@ public Object aroundMethod(ProceedingJoinPoint joinPoint){
 
 <img src='../images/spring6/img026.png' alt='' data-fancybox='gallery' style='aspect-ratio:861/570'/>
 
-### 5.5、基于 XML 的 AOP
+### 5.5. 基于 XML 的 AOP
 
-#### 5.5.1、准备工作
+#### 5.5.1. 准备工作
 
 参考基于注解的 AOP 环境
 
-#### 5.5.2、实现
+#### 5.5.2. 实现
 
 ```xml
 <context:component-scan base-package="com.atguigu.aop.xml"></context:component-scan>
@@ -4032,7 +4032,7 @@ public Object aroundMethod(ProceedingJoinPoint joinPoint){
 </aop:config>
 ```
 
-## 6、单元测试：JUnit
+## 6. 单元测试：JUnit
 
 在之前的测试方法中，几乎都能看到以下的两行代码：
 
@@ -4043,13 +4043,13 @@ Xxxx xxx = context.getBean(Xxxx.class);
 
 这两行代码的作用是创建 Spring 容器，最终获取到对象，但是每次测试都需要重复编写。针对上述问题，我们需要的是程序能自动帮我们创建容器。我们都知道 JUnit 无法知晓我们是否使用了 Spring 框架，更不用说帮我们创建 Spring 容器了。Spring 提供了一个运行器，可以读取配置文件（或注解）来创建容器。我们只需要告诉它配置文件位置就可以了。这样一来，我们通过 Spring 整合 JUnit 可以使程序创建 spring 容器了
 
-### 6.1、整合 JUnit5
+### 6.1. 整合 JUnit5
 
-#### 6.1.1、搭建子模块
+#### 6.1.1. 搭建子模块
 
 搭建 spring-junit 模块
 
-#### 6.1.2、引入依赖
+#### 6.1.2. 引入依赖
 
 ```xml
 <dependencies>
@@ -4089,7 +4089,7 @@ Xxxx xxx = context.getBean(Xxxx.class);
 </dependencies>
 ```
 
-#### 6.1.3、添加配置文件
+#### 6.1.3. 添加配置文件
 
 beans.xml
 
@@ -4106,7 +4106,7 @@ beans.xml
 
 copy 日志文件：log4j2.xml
 
-#### 6.1.4、添加 java 类
+#### 6.1.4. 添加 java 类
 
 ```java
 package com.atguigu.spring6.bean;
@@ -4122,7 +4122,7 @@ public class User {
 }
 ```
 
-#### 6.1.5、测试
+#### 6.1.5. 测试
 
 ```java
 import com.atguigu.spring6.bean.User;
@@ -4151,11 +4151,11 @@ public class SpringJUnit5Test {
 }
 ```
 
-### 6.2、整合 JUnit4
+### 6.2. 整合 JUnit4
 
 JUnit4 在公司也会经常用到，在此也学习一下
 
-#### 6.2.1、添加依赖
+#### 6.2.1. 添加依赖
 
 ```xml
 <!-- junit测试 -->
@@ -4166,7 +4166,7 @@ JUnit4 在公司也会经常用到，在此也学习一下
 </dependency>
 ```
 
-#### 6.2.2、测试
+#### 6.2.2. 测试
 
 ```java
 import com.atguigu.spring6.bean.User;
@@ -4190,17 +4190,17 @@ public class SpringJUnit4Test {
 }
 ```
 
-## 7、事务
+## 7. 事务
 
-### 7.1、JdbcTemplate
+### 7.1. JdbcTemplate
 
-#### 7.1.1、简介
+#### 7.1.1. 简介
 
 <img src='../images/spring6/image-20221217115515670.png' alt='' data-fancybox='gallery' style='aspect-ratio:1102/65'/>
 
 Spring 框架对 JDBC 进行封装，使用 JdbcTemplate 方便实现对数据库操作
 
-#### 7.1.2、准备工作
+#### 7.1.2. 准备工作
 
 **① 搭建子模块**
 
@@ -4290,9 +4290,9 @@ CREATE TABLE `t_emp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-#### 7.1.3、实现 CURD
+#### 7.1.3. 实现 CURD
 
-##### ① 装配 JdbcTemplate
+##### 7.1.3.1. 装配 JdbcTemplate
 
 **创建测试类，整合 JUnit，注入 JdbcTemplate**
 
@@ -4312,7 +4312,7 @@ public class JDBCTemplateTest {
 }
 ```
 
-##### ② 测试增删改功能
+##### 7.1.3.2. 测试增删改功能
 
 ```java
 @Test
@@ -4332,7 +4332,7 @@ public void testUpdate(){
 }
 ```
 
-##### ③ 查询数据返回对象
+##### 7.1.3.3. 查询数据返回对象
 
 ```java
 public class Emp {
@@ -4382,7 +4382,7 @@ public void testSelectObject() {
 }
 ```
 
-##### ④ 查询数据返回 list 集合
+##### 7.1.3.4. 查询数据返回 list 集合
 
 ```java
 @Test
@@ -4394,7 +4394,7 @@ public void testSelectList(){
 }
 ```
 
-##### ⑤ 查询返回单个的值
+##### 7.1.3.5. 查询返回单个的值
 
 ```java
 @Test
@@ -4406,15 +4406,15 @@ public void selectCount(){
 }
 ```
 
-### 7.2、声明式事务概念
+### 7.2. 声明式事务概念
 
-#### 7.2.1、事务基本概念
+#### 7.2.1. 事务基本概念
 
-##### ① 什么是事务
+##### 7.2.1.1. 什么是事务
 
 数据库事务( transaction)是访问并可能操作各种数据项的一个数据库操作序列，这些操作要么全部执行,要么全部不执行，是一个不可分割的工作单位。事务由事务开始与事务结束之间执行的全部数据库操作组成。
 
-##### ② 事务的特性
+##### 7.2.1.2. 事务的特性
 
 **A：原子性(Atomicity)**
 
@@ -4436,7 +4436,7 @@ public void selectCount(){
 
 指的是只要事务成功结束，它对数据库所做的更新就必须保存下来。即使发生系统崩溃，重新启动数据库系统后，数据库还能恢复到事务成功结束时的状态。
 
-#### 7.2.2、编程式事务
+#### 7.2.2. 编程式事务
 
 事务功能的相关操作全部通过自己编写代码来实现：
 
@@ -4471,7 +4471,7 @@ try {
 - 细节没有被屏蔽：具体操作过程中，所有细节都需要程序员自己来完成，比较繁琐。
 - 代码复用性不高：如果没有有效抽取出来，每次实现功能都需要自己编写代码，代码就没有得到复用。
 
-#### 7.2.3、声明式事务
+#### 7.2.3. 声明式事务
 
 既然事务控制的代码有规律可循，代码的结构基本是确定的，所以框架就可以将固定模式的代码抽取出来，进行相关的封装。
 
@@ -4486,9 +4486,9 @@ try {
 - **编程式**：**自己写代码**实现功能
 - **声明式**：通过**配置**让**框架**实现功能
 
-### 7.3、基于注解的声明式事务
+### 7.3. 基于注解的声明式事务
 
-#### 7.3.1、准备工作
+#### 7.3.1. 准备工作
 
 **① 添加配置**
 
@@ -4612,7 +4612,7 @@ public class BookDaoImpl implements BookDao {
 }
 ```
 
-#### 7.3.2、测试无事务情况
+#### 7.3.2. 测试无事务情况
 
 **① 创建测试类**
 
@@ -4654,9 +4654,9 @@ public class TxByAnnotationTest {
 
 显然这样的结果是错误的，购买图书是一个完整的功能，更新库存和更新余额要么都成功要么都失败
 
-#### 7.3.3、加入事务
+#### 7.3.3. 加入事务
 
-##### ① 添加事务配置
+##### 7.3.3.1. 添加事务配置
 
 在 spring 配置文件中引入 tx 命名空间
 
@@ -4689,23 +4689,23 @@ public class TxByAnnotationTest {
 <tx:annotation-driven transaction-manager="transactionManager" />
 ```
 
-##### ② 添加事务注解
+##### 7.3.3.2. 添加事务注解
 
 因为 service 层表示业务逻辑层，一个方法表示一个完成的功能，因此处理事务一般在 service 层处理
 
 **在 BookServiceImpl 的 buybook()添加注解@Transactional**
 
-##### ③ 观察结果
+##### 7.3.3.3. 观察结果
 
 由于使用了 Spring 的声明式事务，更新库存和更新余额都没有执行
 
-#### 7.3.4、@Transactional 注解标识的位置
+#### 7.3.4. @Transactional 注解标识的位置
 
 @Transactional 标识在方法上，则只会影响该方法
 
 @Transactional 标识的类上，则会影响类中所有的方法
 
-#### 7.3.5、事务属性：只读
+#### 7.3.5. 事务属性：只读
 
 **① 介绍**
 
@@ -4732,7 +4732,7 @@ public void buyBook(Integer bookId, Integer userId) {
 
 Caused by: java.sql.SQLException: Connection is read-only. Queries leading to data modification are not allowed
 
-#### 7.3.6、事务属性：超时
+#### 7.3.6. 事务属性：超时
 
 **① 介绍**
 
@@ -4767,7 +4767,7 @@ public void buyBook(Integer bookId, Integer userId) {
 
 org.springframework.transaction.**TransactionTimedOutException**: Transaction timed out: deadline was Fri Jun 04 16:25:39 CST 2022
 
-#### 7.3.7、事务属性：回滚策略
+#### 7.3.7. 事务属性：回滚策略
 
 **① 介绍**
 
@@ -4801,7 +4801,7 @@ public void buyBook(Integer bookId, Integer userId) {
 
 虽然购买图书功能中出现了数学运算异常（ArithmeticException），但是我们设置的回滚策略是，当出现 ArithmeticException 不发生回滚，因此购买图书的操作正常执行
 
-#### 7.3.8、事务属性：隔离级别
+#### 7.3.8. 事务属性：隔离级别
 
 **① 介绍**
 
@@ -4853,7 +4853,7 @@ public void buyBook(Integer bookId, Integer userId) {
 @Transactional(isolation = Isolation.SERIALIZABLE)//串行化
 ```
 
-#### 7.3.9、事务属性：传播行为
+#### 7.3.9. 事务属性：传播行为
 
 **① 介绍**
 
@@ -4928,7 +4928,7 @@ public void checkout(Integer[] bookIds, Integer userId){
 
 @Transactional(propagation = Propagation.REQUIRES_NEW)，表示不管当前线程上是否有已经开启的事务，都要开启新事务。同样的场景，每次购买图书都是在 buyBook()的事务中执行，因此第一本图书购买成功，事务结束，第二本图书购买失败，只在第二次的 buyBook()中回滚，购买第一本图书不受影响，即能买几本就买几本。
 
-#### 7.3.10、全注解配置事务
+#### 7.3.10. 全注解配置事务
 
 **① 添加配置类**
 
@@ -4997,13 +4997,13 @@ public class TxByAllAnnotationTest {
 }
 ```
 
-### 7.4、基于 XML 的声明式事务
+### 7.4. 基于 XML 的声明式事务
 
-#### 7.3.1、场景模拟
+#### 7.4.1. 场景模拟
 
 参考基于注解的声明式事务
 
-#### 7.3.2、修改 Spring 配置文件
+#### 7.4.2. 修改 Spring 配置文件
 
 将 Spring 配置文件中去掉 tx:annotation-driven 标签，并添加配置：
 
@@ -5046,9 +5046,9 @@ public class TxByAllAnnotationTest {
 > </dependency>
 > ```
 
-## 8、资源操作：Resources
+## 8. 资源操作：Resources
 
-### 8.1、Spring Resources 概述
+### 8.1. Spring Resources 概述
 
 <img src='../images/spring6/image-20221218154945878.png' alt='' data-fancybox='gallery' style='aspect-ratio:1300/77'/>
 
@@ -5056,7 +5056,7 @@ public class TxByAllAnnotationTest {
 
 Java 的标准 java.net.URL 类和各种 URL 前缀的标准处理程序无法满足所有对 low-level 资源的访问，比如：没有标准化的 URL 实现可用于访问需要从类路径或相对于 ServletContext 获取的资源。并且缺少某些 Spring 所需要的功能，例如检测某资源是否存在等。**而 Spring 的 Resource 声明了访问 low-level 资源的能力。**
 
-### 8.2、Resource 接口
+### 8.2. Resource 接口
 
 Spring 的 Resource 接口位于 org.springframework.core.io 中。 旨在成为一个更强大的接口，用于抽象对低级资源的访问。以下显示了 Resource 接口定义的方法
 
@@ -5119,11 +5119,11 @@ lastModified(): 资源最后一次修改的时间戳
 createRelative(): 创建此资源的相关资源
 getFilename(): 资源的文件名是什么 例如：最后一部分的文件名 myfile.txt
 
-### 8.3、Resource 的实现类
+### 8.3. Resource 的实现类
 
 Resource 接口是 Spring 资源访问策略的抽象，它本身并不提供任何资源访问实现，具体的资源访问由该接口的实现类完成——每个实现类代表一种资源访问策略。Resource 一般包括这些实现类：UrlResource、ClassPathResource、FileSystemResource、ServletContextResource、InputStreamResource、ByteArrayResource
 
-#### 8.3.1、UrlResource 访问网络资源
+#### 8.3.1. UrlResource 访问网络资源
 
 Resource 的一个实现类，用来访问网络资源，它支持 URL 的绝对路径。
 
@@ -5184,7 +5184,7 @@ public static void main(String[] args) {
 }
 ```
 
-#### 8.3.2、ClassPathResource 访问类路径下资源
+#### 8.3.2. ClassPathResource 访问类路径下资源
 
 ClassPathResource 用来访问类加载路径下的资源，相对于其他的 Resource 实现类，其主要优势是方便访问类加载路径里的资源，尤其对于 Web 应用，ClassPathResource 可自动搜索位于 classes 下的资源文件，无须使用绝对路径访问。
 
@@ -5223,7 +5223,7 @@ public class ClassPathResourceDemo {
 
 ClassPathResource 实例可使用 ClassPathResource 构造器显式地创建，但更多的时候它都是隐式地创建的。当执行 Spring 的某个方法时，该方法接受一个代表资源路径的字符串参数，当 Spring 识别该字符串参数中包含 classpath:前缀后，系统会自动创建 ClassPathResource 对象。
 
-#### 8.3.3、FileSystemResource 访问文件系统资源
+#### 8.3.3. FileSystemResource 访问文件系统资源
 
 Spring 提供的 FileSystemResource 类用于访问文件系统资源，使用 FileSystemResource 来访问文件系统资源并没有太大的优势，因为 Java 提供的 File 类也可用于访问文件系统资源。
 
@@ -5263,27 +5263,27 @@ public class FileSystemResourceDemo {
 
 FileSystemResource 实例可使用 FileSystemResource 构造器显示地创建，但更多的时候它都是隐式创建。执行 Spring 的某个方法时，该方法接受一个代表资源路径的字符串参数，当 Spring 识别该字符串参数中包含 file:前缀后，系统将会自动创建 FileSystemResource 对象。
 
-#### 8.3.4、ServletContextResource
+#### 8.3.4. ServletContextResource
 
 这是 ServletContext 资源的 Resource 实现，它解释相关 Web 应用程序根目录中的相对路径。它始终支持流(stream)访问和 URL 访问，但只有在扩展 Web 应用程序存档且资源实际位于文件系统上时才允许 java.io.File 访问。无论它是在文件系统上扩展还是直接从 JAR 或其他地方（如数据库）访问，实际上都依赖于 Servlet 容器。
 
-#### 8.3.5、InputStreamResource
+#### 8.3.5. InputStreamResource
 
 InputStreamResource 是给定的输入流(InputStream)的 Resource 实现。它的使用场景在没有特定的资源实现的时候使用(感觉和@Component 的适用场景很相似)。与其他 Resource 实现相比，这是已打开资源的描述符。 因此，它的 isOpen()方法返回 true。如果需要将资源描述符保留在某处或者需要多次读取流，请不要使用它。
 
-#### 8.3.6、ByteArrayResource
+#### 8.3.6. ByteArrayResource
 
 字节数组的 Resource 实现类。通过给定的数组创建了一个 ByteArrayInputStream。它对于从任何给定的字节数组加载内容非常有用，而无需求助于单次使用的 InputStreamResource。
 
-### 8.4、Resource 类图
+### 8.4. Resource 类图
 
 上述 Resource 实现类与 Resource 顶级接口之间的关系可以用下面的 UML 关系模型来表示
 
 <img src='../images/spring6/image-20221206232920494.png' alt='' data-fancybox='gallery' style='aspect-ratio:902/529'/>
 
-### 8.5、ResourceLoader 接口
+### 8.5. ResourceLoader 接口
 
-#### 8.5.1、ResourceLoader 概述
+#### 8.5.1. ResourceLoader 概述
 
 Spring 提供如下两个标志性接口：
 
@@ -5295,7 +5295,7 @@ Spring 提供如下两个标志性接口：
 
 （1）**Resource getResource（String location）** ： 该接口仅有这个方法，用于返回一个 Resource 实例。ApplicationContext 实现类都实现 ResourceLoader 接口，因此 ApplicationContext 可直接获取 Resource 实例。
 
-#### 8.5.2、使用演示
+#### 8.5.2. 使用演示
 
 **实验一：ClassPathXmlApplicationContext 获取 Resource 实例**
 
@@ -5338,7 +5338,7 @@ public class Demo2 {
 }
 ```
 
-#### 8.5.3、ResourceLoader 总结
+#### 8.5.3. ResourceLoader 总结
 
 Spring 将采用和 ApplicationContext 相同的策略来访问资源。也就是说，如果 ApplicationContext 是 FileSystemXmlApplicationContext，res 就是 FileSystemResource 实例；如果 ApplicationContext 是 ClassPathXmlApplicationContext，res 就是 ClassPathResource 实例
 
@@ -5352,7 +5352,7 @@ Resrouce res = ctx.getResource("file:bean.xml");
 Resource res = ctx.getResource("http://localhost:8080/beans.xml");
 ```
 
-### 8.6、ResourceLoaderAware 接口
+### 8.6. ResourceLoaderAware 接口
 
 ResourceLoaderAware 接口实现类的实例将获得一个 ResourceLoader 的引用，ResourceLoaderAware 接口也提供了一个 setResourceLoader()方法，该方法将由 Spring 容器负责调用，Spring 容器会将一个 ResourceLoader 对象作为该方法的参数传入。
 
@@ -5426,7 +5426,7 @@ public class Demo3 {
 }
 ```
 
-### 8.7、使用 Resource 作为属性
+### 8.7. 使用 Resource 作为属性
 
 前面介绍了 Spring 提供的资源访问策略，但这些依赖访问策略要么需要使用 Resource 实现类，要么需要使用 ApplicationContext 来获取资源。实际上，当应用程序中的 Bean 实例需要访问资源时，Spring 有更好的解决方法：直接利用依赖注入。从这个意义上来看，Spring 框架不仅充分利用了策略模式来简化资源访问，而且还将策略模式和 IoC 进行充分地结合，最大程度地简化了 Spring 资源访问。
 
@@ -5499,9 +5499,9 @@ public class Demo4 {
 }
 ```
 
-### 8.8、应用程序上下文和资源路径
+### 8.8. 应用程序上下文和资源路径
 
-#### 8.8.1、概述
+#### 8.8.1. 概述
 
 不管以怎样的方式创建 ApplicationContext 实例，都需要为 ApplicationContext 指定配置文件，Spring 允许使用一份或多分 XML 配置文件。当程序创建 ApplicationContext 实例时，通常也是以 Resource 的方式来访问配置文件的，所以 ApplicationContext 完全支持 ClassPathResource、FileSystemResource、ServletContextResource 等资源访问方式。
 
@@ -5511,7 +5511,7 @@ public class Demo4 {
 
 **（2）使用前缀指定访问策略。**
 
-#### 8.8.2、ApplicationContext 实现类指定访问策略
+#### 8.8.2. ApplicationContext 实现类指定访问策略
 
 创建 ApplicationContext 对象时，通常可以使用如下实现类：
 
@@ -5525,7 +5525,7 @@ public class Demo4 {
 
 效果前面已经演示
 
-#### 8.8.3、使用前缀指定访问策略
+#### 8.8.3. 使用前缀指定访问策略
 
 **实验一：classpath 前缀使用**
 
@@ -5585,15 +5585,15 @@ Spring 允许将 classpath\*:前缀和通配符结合使用：
 ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:bean*.xml");
 ```
 
-## 9、国际化：i18n
+## 9. 国际化：i18n
 
 <img src='../images/spring6/image-20221218154728062.png' alt='' data-fancybox='gallery' style='aspect-ratio:1322/76'/>
 
-### 9.1、i18n 概述
+### 9.1. i18n 概述
 
 国际化也称作 i18n，其来源是英文单词 internationalization 的首末字符 i 和 n，18 为中间的字符数。由于软件发行可能面向多个国家，对于不同国家的用户，软件显示不同语言的过程就是国际化。通常来讲，软件中的国际化是通过配置文件来实现的，假设要支撑两种语言，那么就需要两个版本的配置文件。
 
-### 9.2、Java 国际化
+### 9.2. Java 国际化
 
 （1）Java 自身是支持国际化的，java.util.Locale 用于指定当前用户所属的语言环境等信息，java.util.ResourceBundle 用于查找绑定对应的资源文件。Locale 包含了 language 信息和 country 信息，Locale 创建默认 locale 对象时使用的静态方法：
 
@@ -5643,9 +5643,9 @@ public class Demo1 {
 }
 ```
 
-### 9.3、Spring6 国际化
+### 9.3. Spring6 国际化
 
-#### 9.3.1、MessageSource 接口
+#### 9.3.1. MessageSource 接口
 
 spring 中国际化是通过 MessageSource 这个接口来支持的
 
@@ -5663,7 +5663,7 @@ spring 中国际化是通过 MessageSource 这个接口来支持的
 
 它允许通过编程的方式提供国际化信息，一会我们可以通过这个来实现 db 中存储国际化信息的功能。
 
-#### 9.3.2、使用 Spring6 国际化
+#### 9.3.2. 使用 Spring6 国际化
 
 **第一步 创建资源文件**
 
@@ -5735,11 +5735,11 @@ public class Demo2 {
 }
 ```
 
-## 10、数据校验：Validation
+## 10. 数据校验：Validation
 
 <img src='../images/spring6/image-20221218154808754.png' alt='' data-fancybox='gallery' style='aspect-ratio:1310/77'/>
 
-### 10.1、Spring Validation 概述
+### 10.1. Spring Validation 概述
 
 <img src='../images/spring6/image-20221206220207266.png' alt='' data-fancybox='gallery' style='aspect-ratio:1183/238'/>
 
@@ -5755,7 +5755,7 @@ public class Demo2 {
 
 **除此之外，还可以实现自定义校验**
 
-### 10.2、实验一：通过 Validator 接口实现
+### 10.2. 实验一：通过 Validator 接口实现
 
 **第一步 创建子模块 spring6-validator**
 
@@ -5870,7 +5870,7 @@ public class TestMethod1 {
 }
 ```
 
-### 10.3、实验二：Bean Validation 注解实现
+### 10.3. 实验二：Bean Validation 注解实现
 
 使用 Bean Validation 校验方式，就是如何将 Bean Validation 需要使用的 javax.validation.ValidatorFactory 和 javax.validation.Validator 注入到容器中。spring 默认有一个实现类 LocalValidatorFactoryBean，它实现了上面 Bean Validation 中的接口，并且也实现了 org.springframework.validation.Validator 接口。
 
@@ -6019,7 +6019,7 @@ public class TestMethod2 {
 }
 ```
 
-### 10.4、实验三：基于方法实现校验
+### 10.4. 实验三：基于方法实现校验
 
 **第一步 创建配置类，配置 MethodValidationPostProcessor**
 
@@ -6127,7 +6127,7 @@ public class TestMethod3 {
 }
 ```
 
-### 10.5、实验四：实现自定义校验
+### 10.5. 实验四：实现自定义校验
 
 **第一步 自定义校验注解**
 
@@ -6194,13 +6194,13 @@ public class CannotBlankValidator implements ConstraintValidator<CannotBlank, St
 }
 ```
 
-## 11、提前编译：AOT
+## 11. 提前编译：AOT
 
 <img src='../images/spring6/image-20221218154841001.png' alt='' data-fancybox='gallery' style='aspect-ratio:1314/82'/>
 
-### 11.1、AOT 概述
+### 11.1. AOT 概述
 
-#### 11.1.1、JIT 与 AOT 的区别
+#### 11.1.1. JIT 与 AOT 的区别
 
 JIT 和 AOT 这个名词是指两种不同的编译方式，这两种编译方式的主要区别在于是否在“运行时”进行编译
 
@@ -6237,7 +6237,7 @@ AOT 编译能直接将源代码转化为机器码，内存占用低，启动速�
 
 现在正处于云原生，降本增效的时代，Java 相比于 Go、Rust 等其他编程语言非常大的弊端就是启动编译和启动进程非常慢，这对于根据实时计算资源，弹性扩缩容的云原生技术相冲突，Spring6 借助 AOT 技术在运行时内存占用低，启动速度快，逐渐的来满足 Java 在云原生时代的需求，对于大规模使用 Java 应用的商业公司可以考虑尽早调研使用 JDK17，通过云原生技术为公司实现降本增效。
 
-#### 11.1.2、Graalvm
+#### 11.1.2. Graalvm
 
 Spring6 支持的 AOT 技术，这个 GraalVM 就是底层的支持，Spring 也对 GraalVM 本机映像提供了一流的支持。GraalVM 是一种高性能 JDK，旨在加速用 Java 和其他 JVM 语言编写的应用程序的执行，同时还为 JavaScript、Python 和许多其他流行语言提供运行时。 GraalVM 提供两种运行 Java 应用程序的方法：在 HotSpot JVM 上使用 Graal 即时 (JIT) 编译器或作为提前 (AOT) 编译的本机可执行文件。 GraalVM 的多语言能力使得在单个应用程序中混合多种编程语言成为可能，同时消除了外语调用成本。GraalVM 向 HotSpot Java 虚拟机添加了一个用 Java 编写的高级即时 (JIT) 优化编译器。
 
@@ -6253,16 +6253,16 @@ GraalVM 具有以下特性：
 
 总的来说对云原生的要求不算高短期内可以继续使用 2.7.X 的版本和 JDK8，不过 Spring 官方已经对 Spring6 进行了正式版发布。
 
-#### 11.1.3、Native Image
+#### 11.1.3. Native Image
 
 目前业界除了这种在 JVM 中进行 AOT 的方案，还有另外一种实现 Java AOT 的思路，那就是直接摒弃 JVM，和 C/C++一样通过编译器直接将代码编译成机器代码，然后运行。这无疑是一种直接颠覆 Java 语言设计的思路，那就是 GraalVM Native Image。它通过 C 语言实现了一个超微缩的运行时组件 —— Substrate VM，基本实现了 JVM 的各种特性，但足够轻量、可以被轻松内嵌，这就让 Java 语言和工程摆脱 JVM 的限制，能够真正意义上实现和 C/C++一样的 AOT 编译。这一方案在经过长时间的优化和积累后，已经拥有非常不错的效果，基本上成为 Oracle 官方首推的 Java AOT 解决方案。
 Native Image 是一项创新技术，可将 Java 代码编译成独立的本机可执行文件或本机共享库。在构建本机可执行文件期间处理的 Java 字节码包括所有应用程序类、依赖项、第三方依赖库和任何所需的 JDK 类。生成的自包含本机可执行文件特定于不需要 JVM 的每个单独的操作系统和机器体系结构。
 
-### 11.2、演示 Native Image 构建过程
+### 11.2. 演示 Native Image 构建过程
 
-#### 11.2.1、GraalVM 安装
+#### 11.2.1. GraalVM 安装
 
-##### （1）下载 GraalVM
+##### 11.2.1.1. 下载 GraalVM
 
 进入官网下载：https://www.graalvm.org/downloads/
 
@@ -6270,7 +6270,7 @@ Native Image 是一项创新技术，可将 Java 代码编译成独立的本机�
 
 <img src='../images/spring6/image-20221207152841304.png' alt='' data-fancybox='gallery' style='aspect-ratio:1028/429'/>
 
-##### （2）配置环境变量
+##### 11.2.1.2. 配置环境变量
 
 **添加 GRAALVM_HOME**
 
@@ -6288,27 +6288,27 @@ Native Image 是一项创新技术，可将 Java 代码编译成独立的本机�
 
 <img src='../images/spring6/image-20221207153642253.png' alt='' data-fancybox='gallery' style='aspect-ratio:1143/135'/>
 
-##### （3）安装 native-image 插件
+##### 11.2.1.3. 安装 native-image 插件
 
 **使用命令 gu install native-image 下载安装**
 
 <img src='../images/spring6/image-20221207155009832.png' alt='' data-fancybox='gallery' style='aspect-ratio:1076/385'/>
 
-#### 11.2.2、安装 C++的编译环境
+#### 11.2.2. 安装 C++的编译环境
 
-##### （1）下载 Visual Studio 安装软件
+##### 11.2.2.1. 下载 Visual Studio 安装软件
 
 https://visualstudio.microsoft.com/zh-hans/downloads/
 
 <img src='../images/spring6/image-20221219112426052.png' alt='' data-fancybox='gallery' style='aspect-ratio:1370/680'/>
 
-##### （2）安装 Visual Studio
+##### 11.2.2.2. 安装 Visual Studio
 
 <img src='../images/spring6/image-20221207155726572.png' alt='' data-fancybox='gallery' style='aspect-ratio:1678/812'/>
 
 <img src='../images/spring6/image-20221207155756512.png' alt='' data-fancybox='gallery' style='aspect-ratio:1381/539'/>
 
-##### （3）添加 Visual Studio 环境变量
+##### 11.2.2.3. 添加 Visual Studio 环境变量
 
 配置 INCLUDE、LIB 和 Path
 
@@ -6318,13 +6318,13 @@ https://visualstudio.microsoft.com/zh-hans/downloads/
 
 <img src='../images/spring6/image-20221207111105569.png' alt='' data-fancybox='gallery' style='aspect-ratio:812/342'/>
 
-##### （4）打开工具，在工具中操作
+##### 11.2.2.4. 打开工具，在工具中操作
 
 <img src='../images/spring6/image-20221207111206279.png' alt='' data-fancybox='gallery' style='aspect-ratio:515/101'/>
 
-#### 11.2.3、编写代码，构建 Native Image
+#### 11.2.3. 编写代码，构建 Native Image
 
-##### （1）编写 Java 代码
+##### 11.2.3.1. 编写 Java 代码
 
 ```java
 public class Hello {
@@ -6335,21 +6335,21 @@ public class Hello {
 }
 ```
 
-##### （2）复制文件到目录，执行编译
+##### 11.2.3.2. 复制文件到目录，执行编译
 
 <img src='../images/spring6/image-20221207111420056.png' alt='' data-fancybox='gallery' style='aspect-ratio:973/249'/>
 
-##### （3）Native Image 进行构建
+##### 11.2.3.3. Native Image 进行构建
 
 <img src='../images/spring6/image-20221207111509837.png' alt='' data-fancybox='gallery' style='aspect-ratio:1039/331'/>
 
 <img src='../images/spring6/image-20221207111609878.png' alt='' data-fancybox='gallery' style='aspect-ratio:1216/568'/>
 
-##### （4）查看构建的文件
+##### 11.2.3.4. 查看构建的文件
 
 <img src='../images/spring6/image-20221207111644950.png' alt='' data-fancybox='gallery' style='aspect-ratio:451/145'/>
 
-##### （5）执行构建的文件
+##### 11.2.3.5. 执行构建的文件
 
 <img src='../images/spring6/image-20221207111731150.png' alt='' data-fancybox='gallery' style='aspect-ratio:870/145'/>
 
